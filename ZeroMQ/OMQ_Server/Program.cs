@@ -4,14 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
 using NetMQ;
 
+=======
+>>>>>>> 43662d24bcc9a4060b6bcbbb8b2a352410ef20c5
 namespace OMQ_Server
 {
     class Program
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             using (NetMQContext context = NetMQContext.Create())
             {
                 Server(context);
@@ -56,6 +60,8 @@ namespace OMQ_Server
                     }
                 }
             }
+=======
+>>>>>>> 43662d24bcc9a4060b6bcbbb8b2a352410ef20c5
         }
     }
 }

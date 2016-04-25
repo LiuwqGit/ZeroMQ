@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -34,6 +35,12 @@ Global
 		{A596928E-0724-4EE3-A429-CA545BB27633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A596928E-0724-4EE3-A429-CA545BB27633}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+=======
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Global
+>>>>>>> 43662d24bcc9a4060b6bcbbb8b2a352410ef20c5
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
