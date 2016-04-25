@@ -1,8 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-<<<<<<< HEAD
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMQ_Client", "OMQ_Client\OMQ_Client.csproj", "{4ADC4597-BC52-4F83-BD32-A7FD4E15CF5F}"
 EndProject
@@ -11,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ_Pub", "NetMQ_Pub\NetMQ_Pub.csproj", "{AA47F7F6-D7B6-4885-A08B-EFEA0B7C4919}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ_Sub", "NetMQ_Sub\NetMQ_Sub.csproj", "{A596928E-0724-4EE3-A429-CA545BB27633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ_Ventilator", "NetMQ_Ventilator\NetMQ_Ventilator.csproj", "{75DBE113-7CFF-4F08-B702-D4B26B468F5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ_Worker", "NetMQ_Worker\NetMQ_Worker.csproj", "{C5AB99E2-EE6C-45CA-8D67-26C6DEB87596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ_Sink", "NetMQ_Sink\NetMQ_Sink.csproj", "{CB9DDD85-D0E7-49FB-B28A-98160760DCE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{B679D836-0357-4A67-AF84-3AF3B1CDE49F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,13 +41,23 @@ Global
 		{A596928E-0724-4EE3-A429-CA545BB27633}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A596928E-0724-4EE3-A429-CA545BB27633}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A596928E-0724-4EE3-A429-CA545BB27633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75DBE113-7CFF-4F08-B702-D4B26B468F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75DBE113-7CFF-4F08-B702-D4B26B468F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75DBE113-7CFF-4F08-B702-D4B26B468F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75DBE113-7CFF-4F08-B702-D4B26B468F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5AB99E2-EE6C-45CA-8D67-26C6DEB87596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5AB99E2-EE6C-45CA-8D67-26C6DEB87596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5AB99E2-EE6C-45CA-8D67-26C6DEB87596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5AB99E2-EE6C-45CA-8D67-26C6DEB87596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB9DDD85-D0E7-49FB-B28A-98160760DCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9DDD85-D0E7-49FB-B28A-98160760DCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9DDD85-D0E7-49FB-B28A-98160760DCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9DDD85-D0E7-49FB-B28A-98160760DCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B679D836-0357-4A67-AF84-3AF3B1CDE49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B679D836-0357-4A67-AF84-3AF3B1CDE49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B679D836-0357-4A67-AF84-3AF3B1CDE49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B679D836-0357-4A67-AF84-3AF3B1CDE49F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-=======
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Global
->>>>>>> 43662d24bcc9a4060b6bcbbb8b2a352410ef20c5
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

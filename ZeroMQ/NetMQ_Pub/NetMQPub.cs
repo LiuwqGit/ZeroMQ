@@ -41,7 +41,8 @@ namespace NetMQ_Pub
                         int weatherId = rng.Next(0, 4);
 
                         msg = string.Format("{0} {1} {2}", zipcode, temperature, weathers[weatherId]);
-                        publisher.Send(msg, Encoding.UTF8, SendReceiveOptions.DontWait);
+                        //publisher.Send(msg, Encoding.UTF8, SendReceiveOptions.DontWait);
+                        publisher.SendFrame(msg);
 
                         Console.WriteLine(msg);
                         Thread.Sleep(sleeptime);
