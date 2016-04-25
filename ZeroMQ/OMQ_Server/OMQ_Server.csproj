@@ -4,11 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-<<<<<<< HEAD
     <ProjectGuid>{5D7EA24C-6CB9-45EF-A0B1-BB8C486ED148}</ProjectGuid>
-=======
-    <ProjectGuid>5d7ea24c-6cb9-45ef-a0b1-bb8c486ed148</ProjectGuid>
->>>>>>> 43662d24bcc9a4060b6bcbbb8b2a352410ef20c5
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OMQ_Server</RootNamespace>
@@ -36,7 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Reference Include="AsyncIO, Version=0.1.17.0, Culture=neutral, PublicKeyToken=44a94435bd6f33f8, processorArchitecture=MSIL">
       <HintPath>..\packages\AsyncIO.0.1.17.0\lib\net40\AsyncIO.dll</HintPath>
       <Private>True</Private>
@@ -45,8 +40,6 @@
       <HintPath>..\packages\NetMQ.3.3.2.2\lib\net40\NetMQ.dll</HintPath>
       <Private>True</Private>
     </Reference>
-=======
->>>>>>> 43662d24bcc9a4060b6bcbbb8b2a352410ef20c5
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,10 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-<<<<<<< HEAD
     <None Include="packages.config" />
-=======
->>>>>>> 43662d24bcc9a4060b6bcbbb8b2a352410ef20c5
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
