@@ -27,7 +27,7 @@ namespace OMQ_Server
                 {
                     string message = serverSocket.ReceiveFrameString();
 
-                    Console.WriteLine("Receive message {0}", message);
+                    Console.WriteLine("Receive message :\r\n{0}\r\n", message);
 
                     #region 根据接收到的消息，返回不同的信息
                     if (message == "Hello1")

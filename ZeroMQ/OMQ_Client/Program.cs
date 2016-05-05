@@ -22,12 +22,14 @@ namespace OMQ_Client
         {
             using (NetMQSocket clientSocket = context.CreateRequestSocket())
             {
+                Random rd = new Random();
+                int num = rd.Next(0, 100);
                 clientSocket.Connect("tcp://127.0.0.1:5555");
                 while (true)
                 {
-                    Console.WriteLine("Please enter your message:");
+                    Console.WriteLine(num + ",Please enter your message:");
                     string message = Console.ReadLine();
-                    clientSocket.SendFrame(message);
+                    clientSocket.SendFrame(num + ":" + message);
 
                     string answer = clientSocket.ReceiveFrameString();
 
