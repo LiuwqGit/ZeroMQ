@@ -29,6 +29,7 @@ namespace NetMQ_Sub
                 {
                     subscriber.Connect("tcp://127.0.0.1:5556");
                     subscriber.Subscribe(zipcode.ToString(CultureInfo.InvariantCulture));
+                    //subscriber.Subscribe("");
 
                     while (true)
                     {

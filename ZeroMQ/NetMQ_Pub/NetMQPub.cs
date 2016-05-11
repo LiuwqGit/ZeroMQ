@@ -17,10 +17,8 @@ namespace NetMQ_Pub
         /// </summary>
         public static void Start()
         {
-            string[] weathers = new string[5] { "晴朗", "多云", "阴天", "小雨", "暴雪" };
-
-            Console.CancelKeyPress += Console_CancelKeyPress;
-
+            string[] weathers = new string[6] { "晴朗", "多云", "阴天", "霾", "雨", "雪" };
+             
             Console.WriteLine("发布多个地区天气预报：");
 
             using (NetMQContext context = NetMQContext.Create())
@@ -31,17 +29,17 @@ namespace NetMQ_Pub
 
                     var rng = new Random();
                     string msg;
-                    int sleeptime = 10;
+                    int sleeptime = 1000;//1秒
 
-                    while (_terminateEvent.WaitOne(0) == false)
+                    ///指定发布的时间间隔，1秒
+                    while (_terminateEvent.WaitOne(1000) == false)
                     {
                         //随机生成天气数据
                         int zipcode = rng.Next(0, 99);
                         int temperature = rng.Next(-50, 50);
-                        int weatherId = rng.Next(0, 4);
+                        int weatherId = rng.Next(0, 5);
 
                         msg = string.Format("{0} {1} {2}", zipcode, temperature, weathers[weatherId]);
-                        //publisher.Send(msg, Encoding.UTF8, SendReceiveOptions.DontWait);
                         publisher.SendFrame(msg);
 
                         Console.WriteLine(msg);
