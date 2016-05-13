@@ -26,7 +26,7 @@ namespace NetMQ_Sink
                     receiver.Bind("tcp://localhost:5558");
 
                     //wait for start of batch (see Ventilator.csproj  Program.cs)
-                    var startOfBatchTrigger = receiver.ReceiveString();
+                    var startOfBatchTrigger = receiver.ReceiveFrameString();
                     Console.WriteLine("Seen start of batch");
 
                     //Start our clock now
@@ -35,7 +35,7 @@ namespace NetMQ_Sink
 
                     for (int taskNumber = 0; taskNumber < 10000; taskNumber++)
                     {
-                        var workerDoneTrigger = receiver.ReceiveString();
+                        var workerDoneTrigger = receiver.ReceiveFrameString();
                         Console.WriteLine(workerDoneTrigger);
                     }
 

@@ -44,8 +44,6 @@ namespace NetMQ_Ventilator
 
                         using (var sm = new MemoryStream())
                         {
-                            //序列化对象，也可以使用 ProtoBuf 或者 BinaryFormatter
-
                             string s = JsonConvert.SerializeObject(person);
 
                             sender.SendFrame(s);
