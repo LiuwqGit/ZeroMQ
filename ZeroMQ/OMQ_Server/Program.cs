@@ -22,17 +22,21 @@ namespace OMQ_Server
         {
             using (NetMQSocket serverSocket = context.CreateResponseSocket())
             {
-                serverSocket.Bind("tcp://*:5555");
+                serverSocket.Bind("tcp://127.0.0.1:5555");
                 while (true)
                 {
-                    string message = serverSocket.ReceiveFrameString();
+                    string message1 = serverSocket.ReceiveFrameString();
 
-                    Console.WriteLine("Receive message :\r\n{0}\r\n", message);
+                    Console.WriteLine("Receive message :\r\n{0}\r\n", message1);
+
+                    string[] msg = message1.Split(':');
+                    string message = msg[1];
+
 
                     #region 根据接收到的消息，返回不同的信息
-                    if (message == "Hello1")
+                    if (message == "Hello")
                     {
-                        serverSocket.SendFrame("World1");
+                        serverSocket.SendFrame("World");
                     }
                     else if (message == "ni hao ")
                     {
