@@ -5,7 +5,8 @@
 #### [四：NetMQ 推拉模式 Push-Pull](http://www.cnblogs.com/liusc/p/5461184.html) ####
 
 # zeromq简介 #
-**`NetMQ` 是  `ZeroMQ`的C#移植版本。**
+**`NetMQ` 是  `ZeroMQ`的C#移植版本。**  
+**`NetMQ` 版本 3.3.2.2**
 
 ## 1：zeromq是什么 ##
 `NetMQ` （ZeroMQ to .Net），`ZMQ`号称史上最快中间件。  
